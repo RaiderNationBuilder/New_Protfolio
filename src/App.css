@@ -1,0 +1,183 @@
+/* You can remove most of the old App.css */
+
+/* Basic reset and styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.main {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0056b3;
+}
+
+/* Bio Section */
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bio picture {
+  text-align: center;
+}
+
+.bio img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+address h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+address p {
+  color: #666;
+}
+
+/* Projects Section */
+.projects {
+  margin-bottom: 20px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  text-decoration: underline;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item img {
+  width: 100%;
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    margin-top: 10px;
+  }
+
+  .bio {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .nav li {
+    margin-left: 10px;
+  }
+
+  .nav a {
+    font-size: 0.9em;
+  }
+
+  .bio img {
+    max-width: 150px;
+  }
+
+  .about h3 {
+    font-size: 1.4em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+
+  .projects h2 {
+    font-size: 1.8em;
+  }
+}

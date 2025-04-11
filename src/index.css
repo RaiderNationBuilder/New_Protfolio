@@ -1,0 +1,263 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+.main {
+  height: 100%;
+}
+
+/* Resets above */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.main {
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0056b3;
+}
+
+/* Bio Section */
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bio picture {
+  display: flex;
+  justify-content: center;
+}
+
+.bio img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h3 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+address h3 {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+address p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Projects Section */
+.projects {
+  margin-bottom: 40px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  text-decoration: underline;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    margin-top: 10px;
+  }
+
+  .nav li {
+    margin-left: 10px;
+  }
+
+  .bio {
+    grid-template-columns: 1fr;
+  }
+
+  .bio img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .nav a {
+    font-size: 0.9em;
+  }
+
+  .bio img {
+    max-width: 120px;
+  }
+
+  .about h3 {
+    font-size: 1.2em;
+  }
+
+  .about p {
+    font-size: 0.9em;
+  }
+
+  .projects h2 {
+    font-size: 1.5em;
+  }
+}
