@@ -4,7 +4,7 @@ import runbuddy from "../src/02-run-buddy.jpg";
 import homepage from "../src/homepage.png";
 import workItDone from "../src/work-it-done.jpg";
 import stillGood from "../src/stillGood.jpg";
-import { HashRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
