@@ -4,6 +4,7 @@ import runbuddy from "../src/02-run-buddy.jpg";
 import homepage from "../src/homepage.png";
 import workItDone from "../src/work-it-done.jpg";
 import stillGood from "../src/stillGood.jpg";
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <h1>Patrick Sebstead</h1>
         <nav className="nav">
           <ul>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#/bio">Bio</a></li>
+            <li><a href="#/contact">Contact</a></li>
+            <li><a href="#/projects">Projects</a></li>
           </ul>
         </nav>
       </header>
