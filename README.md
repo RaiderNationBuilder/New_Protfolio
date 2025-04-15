@@ -43,10 +43,10 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Screenshot
 
-![alt text](/screenshots/fullscreen1.png)
-![alt text](/screenshots/fullscreen2.png)
-![alt text](/screenshots/smallestscreen.png)
-![alt text](/screenshots/smallestscreen2.png)
+![alt text](/screenshots/htmlCode.png)
+![alt text](/screenshots/JSCode.png)
+![alt text](/screenshots/ProBio.png)
+![alt text](/screenshots/ProProjects.png)
 
 ### Deployment
 
