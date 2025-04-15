@@ -51,4 +51,4 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ### Deployment
 
 You can see the deployed applicaton at:
-https://raidernationbuilder.github.io/portflio-react/
+https://raidernationbuilder.github.io/New_Protfolio/
